@@ -14,7 +14,7 @@ model Condition {
   operator    String
   value       String
   id_variable Int
-  id_rule     Int         @unique 
+  id_rule     Int          
   type        conditions_type
   Rules       Rules           @relation(fields: [id_rule], references: [id])
 }
